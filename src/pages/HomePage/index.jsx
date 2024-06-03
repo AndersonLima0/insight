@@ -6,10 +6,14 @@ const HomePage = () => {
   const projects = [
     {
       id: 1,
-      title: "Projeto Cultural A",
-      description: "Descrição do projeto A",
+      title: "Cultura Digital: Ceará Conectado",
+      description:
+        "Plataforma digital inovadora para promover e preservar a cultura cearense.",
+      image: "https://via.placeholder.com/300",
+      technologies: ["React", "Node.js", "AI", "AR"],
+      socialImpact:
+        "Capacitação de comunidades desfavorecidas e preservação cultural através da tecnologia.",
     },
-    { id: 2, title: "Inovação B", description: "Descrição do projeto B" },
     // Adicione mais projetos aqui
   ];
 
