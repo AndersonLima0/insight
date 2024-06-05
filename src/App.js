@@ -6,6 +6,9 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import ProjectDetailsPage from "./pages/ProjectDeatailsPage";
 import ProjectsPage from "./pages/ProjectPage";
+import FornecedorList from "./pages/FornecedorList";
+import FornecedorEdit from "./pages/FornecedorEdit";
+import FornecedorForm from "./pages/FornecedorForm";
 
 const App = () => {
   return (
@@ -20,7 +23,12 @@ const App = () => {
               element={<ProjectDetailsPage />}
             />
             <Route path="/projects" element={<ProjectsPage />} />
-            {/* Adicione mais rotas conforme necessário */}
+            <Route path="/fornecedores" exact element={<FornecedorList />} />
+            <Route
+              path="/fornecedores/:id/editar"
+              element={<FornecedorEdit />}
+            />
+            <Route path="/cadastrar-fornecedor" element={<FornecedorForm />} />
           </Routes>
         </div>
         <Footer />

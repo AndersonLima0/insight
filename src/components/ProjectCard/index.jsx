@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
 
 const ProjectCard = ({ project }) => {
+  const navigate = useNavigate();
+
+  const handleSaibaMaisClick = () => {
+    navigate(`/projects/${project.id}`, { state: { project } });
+  };
+
   return (
     <div className="project-card">
       <img src={project.image} alt={project.title} className="project-image" />
@@ -20,9 +26,9 @@ const ProjectCard = ({ project }) => {
           <strong>Impacto Social:</strong> {project.socialImpact}
         </div>
         <div className="project-actions">
-          <Link to={`/projects/${project.id}`} className="project-link">
+          <button onClick={handleSaibaMaisClick} className="project-link">
             Saiba mais
-          </Link>
+          </button>
           <button className="like-button">👍</button>
           <button className="share-button">🔗</button>
         </div>
