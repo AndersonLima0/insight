@@ -1,7 +1,0 @@
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  position: static; /* Fica na posição padrão, mas sempre no fim da página devido ao flexbox */
-}
