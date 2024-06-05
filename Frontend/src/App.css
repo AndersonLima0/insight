@@ -1,0 +1,65 @@
+/* Define estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Define estilos para a div principal */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Define estilos para o conteúdo */
+.content {
+  flex: 1;
+}
+
+/* Define estilos para o header */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+/* Define estilos para o footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Define estilos para a lista de projetos */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Define estilos para o card de projetos */
+.project-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: calc(33.333% - 2rem);
+  box-sizing: border-box;
+}
+
+/* Define estilos para os detalhes do projeto */
+.project-details {
+  padding: 1rem;
+}
