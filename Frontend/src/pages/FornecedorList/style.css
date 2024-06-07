@@ -16,12 +16,14 @@
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  table-layout: fixed; /* Para melhorar o comportamento responsivo */
 }
 
 .table th,
 .table td {
   border: 1px solid #ddd;
   padding: 8px;
+  word-wrap: break-word; /* Para evitar estouro de conteúdo */
 }
 
 .table th {
@@ -53,4 +55,42 @@
 
 .edit-button:hover {
   background-color: #0056b3;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .table th,
+  .table td {
+    padding: 6px;
+  }
+
+  .edit-button {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .table th,
+  .table td {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .edit-button {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
 }

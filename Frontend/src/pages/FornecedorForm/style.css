@@ -1,6 +1,8 @@
+/* Estilos básicos */
 .container1 {
   margin: 0 auto;
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
 }
 
 h2 {
@@ -13,6 +15,7 @@ input {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .button1 {
@@ -35,4 +38,23 @@ input {
 
 .link-button1 button {
   margin-right: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .container1 {
+    width: 100%;
+  }
+
+  .button1 {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .link-button1 button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }

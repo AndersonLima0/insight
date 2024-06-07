@@ -1,5 +1,7 @@
+/* Estilos básicos */
 .container-fornecedor-edit {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -17,6 +19,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* Inclui o padding e border no cálculo da largura */
 }
 
 .button-save {
@@ -26,8 +29,22 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Animação suave na mudança de cor */
 }
 
 .button-save:hover {
   background-color: #0056b3;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .container-fornecedor-edit {
+    width: 100%;
+    padding: 0 10px; /* Espaçamento lateral para evitar que o conteúdo encoste nas bordas */
+  }
+
+  .button-save {
+    width: 100%; /* Botão ocupa toda a largura disponível */
+    padding: 10px; /* Ajuste do padding para manter uma aparência proporcional */
+  }
 }
